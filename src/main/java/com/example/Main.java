@@ -99,7 +99,8 @@ public class Main {
          energy = "12 GeV";
       }
       Amount<Mass> m = Amount.valueOf(energy).to(KILOGRAM);
-      model.put("science", "E=mc^2: 12 GeV = " + m.toString());
+     // model.put("science", "E=mc^2: 12 GeV = " + m.toString());
+      model.put("science", "E=mc^2: " + energy + " = "  + m.toString());
       return "hello";
   }
 
